@@ -27,8 +27,13 @@ let UserShema = new Schema({
     },
     createAt: {type: Number, default: Date.now}, 
     updateAt: {type: Number, default: null}, 
-    deleteAt: {type: Number, default: null}, 
+    deleteAt: {type: Number, default: null},
+    
+    
+    
 }); 
 
 module.exports  - mongoose.model("user", UserShema); 
 
+//Đây là file trên máy tính (Hiện tại tạm tính chưa có sự thay đổi)
+// Bây giờ mình thêm mấy khoảng trắng xuống dòng thì mình sẽ xử lý trên nhánh _model
