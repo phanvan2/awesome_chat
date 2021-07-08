@@ -13,5 +13,11 @@ let ContactShema = new Schema({
 
 }); 
 
-module.exports  - mongoose.model("contact", ContactShema); 
+ContactShema.statics = {
+    createNew(item) {
+        return this.create(item) ; 
+    }
+}
+
+module.exports  = mongoose.model("contact", ContactShema); 
 
